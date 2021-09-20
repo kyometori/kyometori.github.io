@@ -1,0 +1,104 @@
+:root {
+  --header-height: 70px;
+  --footer-height: 50px;
+}
+
+body {
+  background: rgb(114,235,254);
+  background: radial-gradient(circle, rgba(114,235,254,1) 0%, rgba(52,249,238,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+header {
+  height: var(--header-height);
+  color: white;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: black;
+  /* line-height: var(--header-height); */
+}
+
+header #author {
+  display: block;
+  margin-left: 25px;
+  letter-spacing: 1px;
+  color: inherit;
+  text-decoration: none;
+  font-family: Helvetica Arial;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: var(--header-height);
+}
+
+header #author:hover {
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-name: header-author-shiny;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes header-author-shiny {
+  from {
+    color: white;
+  }
+
+  to {
+    color: yellow;
+  }
+}
+
+header div {
+  height: var(--header-height);
+}
+
+header div a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+header div a:last-child {
+  margin-right: 50px;
+}
+
+header div a:hover {
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-name: header-link-shiny;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes header-link-shiny {
+  from {
+    color: white
+  } to {
+    color: #FF9CAF;
+  }
+}
+
+#header-space {
+  height: var(--header-height);
+}
+
+#content {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height) - 30px);
+}
+
+footer {
+  background-color: #0123FD;
+  position: relative;
+  height: var(--footer-height);
+  line-height: var(--footer-height);
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 0;
+  left: -8px;
+  bottom: -7px;
+  width: 100vw;
+}
