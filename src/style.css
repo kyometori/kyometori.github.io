@@ -6,6 +6,7 @@
 body {
   background: rgb(114,235,254);
   background: radial-gradient(circle, rgba(114,235,254,1) 0%, rgba(52,249,238,1) 50%, rgba(0,212,255,1) 100%);
+  font-family: Helvetica Arial 微軟正黑體;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
   left: 0;
   position: fixed;
   background-color: black;
-  /* line-height: var(--header-height); */
+  z-index: 2;
 }
 
 header #author {
@@ -25,7 +26,6 @@ header #author {
   letter-spacing: 1px;
   color: inherit;
   text-decoration: none;
-  font-family: Helvetica Arial;
   font-size: 30px;
   font-weight: bold;
   line-height: var(--header-height);

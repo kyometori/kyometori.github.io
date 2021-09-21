@@ -11,7 +11,7 @@ export default function Footer() {
 function Copyright(props) {
   return (
     <div style={{ color: 'white' }}>
-      &copy; {props.author} {props.from}-{new Date().getFullYear()}
+      &copy; {props.author} {props.from} - {new Date().getFullYear()}
     </div>
   )
 }

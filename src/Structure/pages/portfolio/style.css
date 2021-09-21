@@ -21,6 +21,11 @@
   background: linear-gradient(180deg, rgba(212,212,212,1) 0%, rgba(185,185,185,1) 57%, rgba(111,111,111,1) 100%);
   width: var(--workbox-width);
   height: var(--workbox-height);
+  margin: 0 10px;
+}
+
+.workbox + .workbox + .workbox + .workbox + .workbox {
+  margin: 30px 10px;
 }
 
 .workbox:hover {

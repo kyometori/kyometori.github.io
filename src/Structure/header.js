@@ -38,7 +38,7 @@ function Author(props) {
 
 function HeaderLink(props) {
   return (
-    <Link class="header-link" to={props.href}>
+    <Link className="header-link" to={props.href}>
       {props.text}
     </Link>
   );
