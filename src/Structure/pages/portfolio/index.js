@@ -3,6 +3,7 @@ import juniorhizollo from '../../../asset/img/junior_hizollo.png';
 import djsmusic from '../../../asset/img/npm-logo.png';
 import hzindex from '../../../asset/img/hzindex.png';
 import chocomint from '../../../asset/img/chocomint.png';
+import acgen from '../../../asset/img/acgen.png';
 import { Link, Switch, Route } from 'react-router-dom';
 import './style.css';
 
@@ -43,6 +44,12 @@ function WorkList() {
         title="chocomint ice"
         description="使用 @kyometori/djsmusic 套件製作的音樂機器人，作為該套件的示範使用存在，同時也包含了各種 discord.js v13 的示範"
         url="/portfolio/chocomint"
+      />
+      <WorkBox
+        pic={acgen}
+        title="AC 訊息產生器"
+        description="一個可以產生神似某用戶所傳的訊息的網站，使用 React.js 製作，作為在 React 中處理表單的練習"
+        url="/portfolio/acgen"
       />
     </div>
   );

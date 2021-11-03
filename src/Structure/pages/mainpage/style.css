@@ -43,7 +43,8 @@
   from {
     transform: translateY(0);
   } to {
-    transform: translateY(-500px);
+    transform: translateY(-1000px);
+    opacity: 0;
   }
 }
 
