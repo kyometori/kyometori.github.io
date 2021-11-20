@@ -30,7 +30,7 @@ function Author() {
         AC0xRPFS001
       </div>
       <div id="author-subtitle">
-        kyometori
+        @kyometori
       </div>
       <div id="author-aboutme">
         <Link to="/about">
